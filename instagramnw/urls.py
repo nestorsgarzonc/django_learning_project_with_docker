@@ -20,7 +20,7 @@ from django.http import HttpResponse
 from posts import views as posts_views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('hw', local_views.hw),
     path('hi/<str:name>', local_views.hi),
     path('posts/', posts_views.list_posts),
